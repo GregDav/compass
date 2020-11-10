@@ -1,0 +1,72 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0;
+  padding:0;
+  transition: all .4s ease-in-out;
+  background-color:black;
+  height:100%;
+  overflow:hidden;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+#page{
+  height:100%;
+  overflow:hidden;
+  filter: saturate(200%);
+}
+
+.pixel{
+  width:1px;
+  height:1px;
+  position:absolute;
+  opacity:.2;
+  mix-blend-mode: screen;
+  
+}
+a{color:white;}
+#logger{
+  width:100%;
+  word-wrap: break-word;
+  overflow:hidden;
+  height:100%;
+  font-size:10px;
+  
+  position:absolute;
+  display:block;
+  color:rgba(255,255,255,.5);
+  opacity:.5;
+}
+#ui{
+  max-width:400px;
+  width:calc(100%-40px);
+  height:95%;
+  position:absolute;
+  overflow-y:scroll;
+  color:white;
+  padding:20px;
+  font-size:11px;
+  right:0;
+  display:none;
+  background-color:rgba(0,0,0,.5);
+  border-radius:5px;
+}
+label{
+  width:50px;
+  display:inline-block;
+  
+  
+}
+.slider{
+  width:100%;
+}
+#uibtn{
+  position:absolute;
+  right:0;
+  z-index:99;
+  margin:20px;
+}
