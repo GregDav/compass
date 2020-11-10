@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>The Compass</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://ai-sdk.morphcast.com/v1.14/ai-sdk.js"></script>
+    <script src="/script.js" defer></script>
+  </head>
+<body>
+<div id="logger">
+  Ready?
+  </div>
+<div id="page" style="width:100%; height:100%; position:absolute; text-align: center; margin:0; overflow:hidden;">
+  <div id="jellyfish" style="width:32px; height:32px; transform:scale(10); display:inline-block; margin:auto; margin-top:50vh;"></div>
+</div>	
+  <input type="checkbox" id="uibtn" name="uibtn" onclick="goUI()">
+<div id="ui" onmouseover="control()" onmouseleave="release()">
+  <h1 style="color:white;">
+    The Compass
+  </h1>
+  This is an emotional compass. You are currently interacting with <a href="https://ai-sdk.morphcast.com/v1.14/docs/index.html">MorphCast AI</a>. 
+This program is processing your visual signals and this page is giving you a rich and dynamic visual feedback of this interaction. 
+  A cluster of pixels reacting to the impression that the program has of you. 
+  This impression is very uniquely yours. 
+  You can tune this impression by changing the range of output signal converted into the pixels.
+    <a href="https://glitch.com/edit/?utm_content=project_thecompass&utm_source=view_source&utm_medium=button&utm_campaign=glitchButton#!/thecompass">
+      >>> code
+  </a>
+  </br></br>
+  <a href="https://maslo.ai/">maslo.ai</a>
+  </br></br>
+  <a href="https://alivemachine.io/">alivemachine.io</a>
+  </br></br>
+  <div class="modelinput">
+    FACE_DETECTOR</br>
+    <label>active</label>
+    <input type="checkbox" id="FD" name="FD" checked></br>
+    <label>start</label>
+    <input type="range" min="1" max="6666" value="0" class="slider" id="FD0"></br>
+    <label>range</label>
+    <input type="range" min="1" max="6666" value="1000" class="slider" id="FD1"></br>
+  </div>
+<div class="modelinput">
+    FACE_POSE</br>
+    <label>active</label>
+    <input type="checkbox" id="FP" name="FP" ></br>
+    <label>start</label>
+    <input type="range" min="1" max="250" value="0" class="slider" id="FP0"></br>
+    <label>range</label>
+    <input type="range" min="1" max="250" value="250" class="slider" id="FP1"></br>
+  </div>
+<div class="modelinput">
+    FACE_AGE</br>
+    <label>active</label>
+    <input type="checkbox" id="FA" name="FA" ></br>
+    <label>start</label>
+    <input type="range" min="1" max="100" value="0" class="slider" id="FA0"></br>
+    <label>range</label>
+    <input type="range" min="1" max="100" value="100" class="slider" id="FA1"></br>
+  </div>
+<div class="modelinput">
+    FACE_EMOTION</br>
+    <label>active</label>
+    <input type="checkbox" id="FE" name="FE" ></br>
+    <label>start</label>
+    <input type="range" min="1" max="500" value="0" class="slider" id="FE0"></br>
+    <label>range</label>
+    <input type="range" min="1" max="500" value="500" class="slider" id="FE1"></br>
+  </div>
+<div class="modelinput">
+    FACE_GENDER</br>
+    <label>active</label>
+    <input type="checkbox" id="FG" name="FG" ></br>
+    <label>start</label>
+    <input type="range" min="1" max="200" value="0" class="slider" id="FG0"></br>
+    <label>range</label>
+    <input type="range" min="1" max="200" value="200" class="slider" id="FG1"></br>
+  </div>
+<div class="modelinput">
+    FACE_FEATURES</br>
+    <label>active</label>
+    <input type="checkbox" id="FF" name="FF" ></br>
+    <label>start</label>
+    <input type="range" min="1" max="2500" value="0" class="slider" id="FF0"></br>
+    <label>end</label>
+    <input type="range" min="1" max="2500" value="2500" class="slider" id="FF1"></br>
+  </div>
+<div class="modelinput">
+    FACE_AROUSAL_VALENCE</br>
+    <label>active</label>
+    <input type="checkbox" id="FAV" name="FAV" ></br>
+    <label>start</label>
+    <input type="range" min="1" max="210" value="0" class="slider" id="FAV0"></br>
+    <label>range</label>
+    <input type="range" min="1" max="210" value="210" class="slider" id="FAV1"></br>
+  </div>
+<div class="modelinput">
+    FACE_ATTENTION</br>
+    <label>active</label>
+    <input type="checkbox" id="FAtt" name="FAtt" ></br>
+    <label>start</label>
+    <input type="range" min="1" max="105" value="0" class="slider" id="FAtt0"></br>
+    <label>range</label>
+    <input type="range" min="1" max="105" value="105" class="slider" id="FAtt1"></br>
+  </div>
+<div class="modelinput">
+    FACE_WISH</br>
+    <label>active</label>
+    <input type="checkbox" id="FW" name="FW" ></br>
+    <label>start</label>
+    <input type="range" min="1" max="60" value="0" class="slider" id="FW0"></br>
+    <label>range</label>
+    <input type="range" min="1" max="60" value="60" class="slider" id="FW1"></br>
+  </div>
+</div>
+</body>
+</html>
