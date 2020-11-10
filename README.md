@@ -1,6 +1,6 @@
 # The Compass
 
-### [Play with the Compass](https://metamapper.glitch.me/)
+### [Play with the Compass](https://thecompass.glitch.me/)
 
 This is an emotional compass.
 You are currently interacting with MorphCast AI.
